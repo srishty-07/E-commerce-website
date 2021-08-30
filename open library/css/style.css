@@ -1,0 +1,392 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    
+    
+}
+.navbar-custom { 
+    background-color: #392f5a !important; 
+    color: antiquewhite !important;
+}
+
+
+.navbar-toggler{
+    border: 1px solid white;
+    color: #392f5a;
+}
+.navbar-toggler-icon{
+    color: #fefae0;
+}
+.navbar-custom a{
+    color: #fefae0;
+}
+.ball {
+    margin-top: 82px;
+    
+    border-radius: 62px;
+    animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+
+      from {
+
+          transform:rotate(0deg);
+
+      }
+
+      to {
+
+          transform:rotate(360deg);
+
+      }
+}
+.carousel-inner{
+    margin: 12px;
+    margin-left: 302px;
+}
+.carousel-item img{
+    height: 700px;
+    width: 90px;
+    border-radius: 22px;
+}
+.carousel-item{
+    width:60vw;
+    margin-top: -150px;
+    border-radius: 22px;
+}
+#carouselExampleCaptions{
+    margin-top: -559px;
+
+}
+.read h1{
+    padding: 12px;
+    color: #fefae0;
+    margin-left: 12px;
+    margin-top: 50px;
+
+}
+a{
+    text-decoration: none;
+    color: deeppink;
+    padding: 12px;
+    
+    
+}
+a:hover{
+    text-decoration:2px solid palevioletred underline;
+    color: rgb(241, 90, 141);
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width:700px;
+    /* flex-direction: row; */
+}
+i{
+    margin-right: 20px;
+}
+@media screen and (max-width:930px)
+{
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+        /* width:500px; */
+        width:929px;
+        
+    }
+    
+}
+@media screen and (max-width:500px)
+{
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+        /* width:500px; */
+        width:508px;
+        
+    }
+    
+}
+
+
+.anim-back h1{
+    color: rgb(0, 0, 0);
+    font-size: 42px;
+}
+@media screen and (max-width:930px)
+{
+    .anim-back
+    {
+        width:929px;
+    }
+    
+}
+@media screen and (max-width:500px)
+{
+    .anim-back
+    {
+        width:508px;
+    }
+    
+}
+
+@keyframes loader
+{
+    /* from{
+        background-color: peru;
+        height: 500px;
+    }
+    to{
+        background-color: rgb(150, 204, 113);
+        height: 500px;
+    } */
+    0%{
+        background: url("/img/2.jpg");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    15%
+    {
+        background: url("/img/3.gif");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    25%{
+        background: url("/img/4.gif");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: url("/img/5.gif");
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+}
+
+/* photogrid */
+.photo-libraray
+{
+    width: 75vw;    
+    margin: 50px auto;
+    display: grid;  
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-auto-columns: minmax(250px,auto);
+    /* grid-auto-rows: minmax(200px,auto); */   
+    gap: 20px;
+   
+
+}
+.photo-libraray div
+{
+    position: relative;
+    border-radius: 12px;
+    height: 300px;
+}
+.photo-libraray div i{
+    position: absolute;
+    left: 45%;
+    top:45%;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    transform: scale(0);
+}
+.photo-libraray div p{
+    
+    padding: 25px;
+    font-size: 20px;
+    
+}
+.photo-libraray div:hover i{
+    transform: scale(2);
+}
+
+.photo-libraray div img{
+    
+    width:100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.photo-libraray div:hover img{
+    opacity: 0.4;
+    cursor: pointer;
+    filter: grayscale(90%);
+    
+
+}
+
+@media screen and (max-width:930px)
+{
+    footer{
+        flex-direction: column;
+        align-items: center;
+        /* width:500px; */
+        width:929px;
+        
+        
+    }
+    
+}
+
+.more{
+    border-radius: 12px;
+    background: #392f5a;
+    height: 241px;
+    display: flex;
+    width: 95vw;
+    margin: -56px 24px;
+    padding: 22px 55px;
+    z-index:1000;
+}
+
+.coffee {
+   
+    position: relative;
+    cursor: pointer;
+    width: 177px;
+    height: 160px;
+    left: 0px;
+    animation: spin 7s ease infinite alternate;
+}
+
+@keyframes spin {
+
+      from {
+
+          transform:rotate(0deg);
+
+      }
+
+      to {
+
+          transform:rotate(360deg);
+
+      }
+      
+}
+
+  .more a{
+      padding:12px;
+    
+  }
+  .more a:hover{
+      background: #fefae0;
+      color: black;
+  }
+
+  .more h1{
+      color:#dceab2;
+      animation-duration: 4s;
+    animation-name: slidein;
+  }
+  .more p{
+    color: #a1cca5;
+    font-family: arial;
+    font-size: 20px;
+    animation-duration: 7s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .contact{
+   
+    margin-top: 121px;
+    height:200px;
+    display: flex;
+    width:100vw;
+    background-color: #fefae0;
+    
+  }
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+  @media (max-width: 575.98px) {
+    .more{
+        border-radius: 12px;
+        background: #141c3a;
+        height: 255px;
+        display: flex;
+        width: 98vw;
+        margin: -90px 10px;
+        padding: 20px 45px;
+        z-index:1000;
+    }
+    .coffee {
+   
+       display: none;
+      }
+    
+      .more a{
+          padding:11px;
+        
+      }
+      .contact{
+        width:101vw;
+        
+      }
+      .profile{
+        height:390px;
+        display: flex;
+        width:101vw;
+        /* background-color: #6902d6; */
+      }
+    }
+
+
+    .creator-section h2{
+        padding: 12px;
+        color: #fefae0;
+        margin-left: 12px;
+        margin-top: 40px;
+    }
+    .creator-section img{
+        height: 500px;
+        width: 400px;
+        opacity: 0.8;
+    }
+    .creator-section{
+        margin-left: 90px;
+    }
+    .creator-section h5{
+        padding: 12px;
+        font-size: 2rem;
+        color: #cbc0d3;
+    }
+    .creator-section p{
+        padding: 25px;
+        font-size: 1.7rem;
+        color: #fefae0;
+    }
+    .creator-section a{
+        border: 2px solid #cbc0d3;
+        color: #fefae0;
+        margin-left: 28px;
+    }

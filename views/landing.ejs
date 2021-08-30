@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redesign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/landing.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="left">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/">Home</a>
+                <a href="/products">Products</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <span onclick="openNav()"><img src="http://assets.stickpng.com/images/588a64e0d06f6719692a2d10.png" style="width: 47px;
+        height: 47px;
+        margin: 18px;"></span>
+
+        </div>
+    </div>
+
+
+    <div class="content">
+
+        <h1 style="font-size: 75px;">PALACE OF</h1>
+        <h1 style="font-size: 75px;margin-left: 194px;margin-top: -30px;">FLOWERS</h1>
+
+    </div>
+    <div class="headingg" style="color:#e2be13">
+        <h1>_____________</h1>
+        <h1>SB EMPIRE</h1>
+    </div>
+    <div class="allPic">
+        <div class="box1">
+            <a href="https://github.com/srishty-07" target="_blank" class="fa fa-github"></a>
+        </div>
+        <div class="box2">
+            <a href="https://www.linkedin.com/in/srishty-bedi-848b81191/" target="_blank" class="fa fa-linkedin"></a>
+        </div>
+        <div class="box3">
+            <a href="https://www.instagram.com/srishty_bedi07/" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    </div>
+
+
+    <div class="rightContent">
+        <p>Flowers… are a proud assertion that a ray of beauty out values all the utilities in the world.</p>
+    </div>
+    <div class="centerContent">
+        <a href="/products"><img class="fimage" src="https://www.clipartmax.com/png/middle/104-1045765_golden-rose-png-image-golden-rose-png.png" style="height: 90px;width: 95px;border-radius: 92px;background-color: black;"></a>
+        <p style="margin-left:-10px;margin-bottom: 10px;">________________________</p>
+        <p>Click here to the fragnant world of flowers.We have some exciting offers for you.</p>
+    </div>
+
+
+    <div class="rightfont">
+        <div class="r1">
+            <div class="rightmost">
+                <p><a href="/register">SIGNUP</a></p>
+            </div>
+        </div>
+        <div class="r2">
+            <div class="rightmost">
+                <%if(!currentUser){%>
+                <p><a href="/login">LOGIN</a></p>
+                <%}else{%>
+                    <a href="#" >Hello <h1 style="font-size: 20px;color: antiquewhite;"><%=currentUser.username%></h1></a>
+                    <a href="/user/<%=currentUser._id%>/cart" class="nav-link active"><i class="fas fa-shopping-cart"></i> 
+                      <sup><span class="badge bg-danger"><%=currentUser.cart.length%></span></sup> 
+                    </a>
+                    <a href="/logout" class="nav-link active">Logout</a>
+                  <%}%>
+            </div>
+        </div>
+        <div class="r3">
+            <div class="rightmost">
+                <p><a href="/products">SHOPPING CART</a></p>
+            </div>
+        </div>
+
+
+
+    </body>
+    <script src="/js/landing.js"></script>
+    
+    </html>

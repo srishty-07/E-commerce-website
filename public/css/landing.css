@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+/* variables css */
+:root {
+    --primary: #1E1E1E;
+    --dark: #121212;
+    --pure: #ffffff;
+    --gray: #1d1d1d;
+    --mild: #b9b8b8;
+}
+
+/* styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pure);
+    background: var(--dark); 
+}
+
+.container {
+    width: 1460px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 8px 30px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .5s ease-in-out;
+}
+
+.btn-primary {
+    color: var(--dark);
+    background: var(--pure);
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--pure);
+    border-color: var(--pure);
+}
+
+.btn-secondary {
+   background: transparent;
+   color: var(--pure);
+   border-color: var(--pure); 
+}
+
+.btn-secondary:hover {
+    background: var(--pure);
+    color: var(--dark);
+}
+/* navbar */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: var(--dark); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:#e2be13;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: var(--pure);
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+
+
+  /* content div */
+ 
+  .left{
+    height: 100vh;
+    width: 60%;    
+    overflow-x: hidden;
+    left: 0;
+    background-color: rgb(12, 11, 11);
+    background-image: url('https://images.unsplash.com/photo-1562562218-628a3bc92fd0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80') ;
+    background-repeat: no-repeat;
+   
+    background-size: cover;
+    background-position: center;
+    /* background-position: center; */
+    
+  }
+   
+
+  .content{
+    font-family: 'Merriweather', serif;
+      width: 500px;
+      /* border: 2px solid red; */
+      text-align: center;
+      margin: 20px auto;
+      margin-top: -425px;
+  }
+  .headingg{
+    text-align: center;
+    margin: 20px auto;
+    margin-top: -451px;
+    /* margin-top: -425px; */
+  }
+
+  /* social icons */
+  .allPic{
+    margin-left: 22px ;
+    margin-top: 99px;
+}
+.box1{
+    border: 2px solid #7f7f7f;
+    height: 50px;
+    padding: 5px 11px;
+    width: 50px;
+    position: absolute;
+    border-radius: 92px;
+    font-size: 29px;
+    
+}
+.box2{
+    
+        border: 2px solid #7f7f7f;
+        height: 50px;
+        padding: 5px 11px;
+        width: 50px;
+        position: relative;
+        top: 70px;
+        border-radius: 92px;
+        font-size: 29px;
+        
+   
+}
+.box3{
+    margin-top: 10px;
+    border: 2px solid #7f7f7f;
+    height: 50px;
+    padding: 5px 11px;
+    width: 50px;
+    position: relative;
+    top: 80px;
+    border-radius: 92px;
+    font-size: 29px;
+    
+}
+a{
+    color: #7f7f7f;
+    text-decoration: none;
+    
+}
+a:hover{
+    color:var(--pure);
+   
+    
+}
+.rightContent{
+    width: 290px;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: -174px;
+    margin-right: 163px;
+    font-family: 'Merriweather', serif;
+}
+.centerContent{
+    width: 259px;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 304px;
+    margin-right: 499px;
+    font-family: 'Rubik', sans-serif;
+}
+.rightfont{
+    float: right;
+    margin-top: -589px;
+    margin-right: 12px;
+
+}
+
+.r1{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    /* border: 2px solid #7f7f7f; */
+    height: 50px;
+    padding: 5px 11px;
+    width: 50px;
+    position: absolute;
+    
+
+}
+.r2{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    /* border: 2px solid #7f7f7f; */
+    height: 50px;
+    padding: 5px 11px;
+    width: 50px;
+    position: relative;
+    top: 190px;
+    right: 2px;
+    
+
+}
+.r3{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    /* border: 2px solid #7f7f7f; */
+    height: 50px;
+    padding: 5px 11px;
+    width: 50px;
+    position: relative;
+    top: 300px;
+    right: 2px;
+  
+}
+.r1:hover{
+    opacity: 0.4;
+}
+.r2:hover{
+    opacity: 0.4;
+}
+.r3:hover{
+    opacity: 0.4;
+}
+.fimage{
+  animation: bounce 3s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;
+
+}
+@keyframes bounce {
+    0%{transform: rotateZ(-30deg) rotateY(0deg);}
+            100%{transform: rotateZ(-30deg) rotateY(360deg);}
+  }
+
+.fimage:hover{
+    animation-iteration-count: 0;
+}
